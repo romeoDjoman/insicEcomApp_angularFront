@@ -1,0 +1,25 @@
+<p>It works</p>
+<div class="journal-list">
+    <h2>Journals</h2>
+
+    <!-- Check if there are any journals -->
+    <div *ngIf="journals.length > 0; else noJournals">
+        <ul>
+            <li *ngFor="let journal of journals">
+                <h3>{{ journal.title }}</h3>
+                <p>{{ journal.article.abstract }}</p> <!-- Abstract can be displayed as well -->
+                <p><strong>Authors:</strong>
+                    <span *ngFor="let author of journal.article.authors; let isLast = last">
+                        {{ author.name }}<span *ngIf="!isLast">, </span>
+                    </span>
+                </p>
+                <p><strong>Date:</strong> {{ journal.year }}</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Template for no journals -->
+    <ng-template #noJournals>
+        <p>No journals available.</p>
+    </ng-template>
+</div>

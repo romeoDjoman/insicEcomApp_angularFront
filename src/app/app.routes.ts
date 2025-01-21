@@ -7,16 +7,16 @@ export const routes: Routes = [
         component: HomeComponent
     },
     { 
-        path: 'products', 
+        path: 'journals', 
         loadComponent: () => 
-            import('./features/products/product-list/product-list.component')
-            .then(m => m.ProductListComponent) 
+            import('./features/journals/journal-list/journal-list.component')
+            .then(m => m.JournalListComponent) 
     },
     { 
-        path: 'product/:id', 
+        path: 'journal/:id', 
         loadComponent: () => 
-            import('./features/products/product-detail/product-detail.component')
-            .then(m => m.ProductDetailComponent) 
+            import('./features/journals/journal-detail/journal-detail.component')
+            .then(m => m.JournalDetailComponent) 
     },
     { 
         path: 'cart', 
