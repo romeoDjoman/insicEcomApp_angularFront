@@ -1,0 +1,224 @@
+{
+    "articles": [
+        {
+            "id": "101",
+            "title": "Advancements in Quantum Computing: A Comprehensive Review",
+            "abstract": "This article reviews recent advancements in quantum computing, focusing on new algorithms and hardware improvements that have the potential to revolutionize computational capabilities.",
+            "keywords": [
+                "quantum computing",
+                "algorithms",
+                "hardware",
+                "computational power"
+            ],
+            "authors": [
+                {
+                    "name": "Dr. Alice Johnson",
+                    "affiliation": "Department of Computer Science, QuantumTech University",
+                    "email": "alice.johnson@quantumtech.edu"
+                },
+                {
+                    "name": "Dr. Robert Lee",
+                    "affiliation": "Institute of Quantum Research, Innovate Labs",
+                    "email": "robert.lee@innovatelabs.com"
+                }
+            ],
+            "journal": {
+                "title": "Journal of Advanced Computing",
+                "volume": 32,
+                "issue": 5,
+                "year": 2024,
+                "doi": "10.1016/j.jac.2024.01.005",
+                "publisher": "Elsevier",
+                "issn": "2345-1234",
+                "price": 49.99
+            },
+            "figures": [
+                {
+                    "caption": "Figure 1: Quantum Circuit Design",
+                    "file": "figure1.png"
+                }
+            ],
+            "references": [
+                {
+                    "title": "Quantum Algorithms for Future Computation",
+                    "authors": "Author A, Author B",
+                    "journal": "International Journal of Quantum Studies",
+                    "year": 2021,
+                    "doi": "10.5555/ijqs.2021.67890"
+                }
+            ]
+        },
+        {
+            "id": "102",
+            "title": "Artificial Intelligence in Healthcare: Transforming Diagnosis and Treatment",
+            "abstract": "This article explores how artificial intelligence (AI) is being integrated into healthcare systems to enhance diagnostic accuracy, improve treatment plans, and enable personalized medicine.",
+            "keywords": [
+                "artificial intelligence",
+                "healthcare",
+                "machine learning",
+                "diagnostics"
+            ],
+            "authors": [
+                {
+                    "name": "Dr. Emily Davis",
+                    "affiliation": "School of Health Sciences, TechnoMed University",
+                    "email": "emily.davis@technomed.edu"
+                }
+            ],
+            "journal": {
+                "title": "International Journal of Medical Informatics",
+                "volume": 45,
+                "issue": 3,
+                "year": 2024,
+                "doi": "10.1016/j.ijmi.2024.04.002",
+                "publisher": "Springer",
+                "issn": "3456-7890",
+                "price": 39.99
+            },
+            "figures": [
+                {
+                    "caption": "Figure 1: AI-powered diagnostic tool",
+                    "file": "figure1.png"
+                }
+            ],
+            "references": [
+                {
+                    "title": "Machine Learning for Healthcare Applications",
+                    "authors": "Author C, Author D",
+                    "journal": "Journal of Medical AI",
+                    "year": 2022,
+                    "doi": "10.5555/jma.2022.45678"
+                }
+            ]
+        },
+        {
+            "id": "103",
+            "title": "Sustainable Energy Solutions for the Future",
+            "abstract": "This article discusses various sustainable energy solutions, focusing on the integration of solar, wind, and hydropower systems for a greener future.",
+            "keywords": [
+                "sustainable energy",
+                "renewable energy",
+                "solar power",
+                "wind power"
+            ],
+            "authors": [
+                {
+                    "name": "Dr. Mark Green",
+                    "affiliation": "Department of Environmental Science, GreenTech University",
+                    "email": "mark.green@greentech.edu"
+                }
+            ],
+            "journal": {
+                "title": "Global Environmental Review",
+                "volume": 20,
+                "issue": 2,
+                "year": 2024,
+                "doi": "10.1016/j.ger.2024.03.015",
+                "publisher": "Wiley",
+                "issn": "9876-5432",
+                "price": 59.99
+            },
+            "figures": [
+                {
+                    "caption": "Figure 1: Solar energy installation",
+                    "file": "figure1.png"
+                }
+            ],
+            "references": [
+                {
+                    "title": "Advances in Solar Energy Technology",
+                    "authors": "Author E, Author F",
+                    "journal": "Renewable Energy Journal",
+                    "year": 2023,
+                    "doi": "10.5555/rej.2023.11112"
+                }
+            ]
+        },
+        {
+            "id": "104",
+            "title": "Exploring the Potential of Blockchain Technology in Finance",
+            "abstract": "This article explores the transformative potential of blockchain technology in the financial sector, with a focus on cryptocurrencies, smart contracts, and decentralized finance.",
+            "keywords": [
+                "blockchain",
+                "cryptocurrency",
+                "finance",
+                "decentralized systems"
+            ],
+            "authors": [
+                {
+                    "name": "Dr. Sarah Lee",
+                    "affiliation": "Blockchain Research Institute, FinTech University",
+                    "email": "sarah.lee@fintech.edu"
+                }
+            ],
+            "journal": {
+                "title": "Journal of Financial Technology",
+                "volume": 14,
+                "issue": 1,
+                "year": 2025,
+                "doi": "10.1016/j.jft.2025.02.011",
+                "publisher": "Springer",
+                "issn": "1122-3344",
+                "price": 69.99
+            },
+            "figures": [
+                {
+                    "caption": "Figure 1: Blockchain network structure",
+                    "file": "figure1.png"
+                }
+            ],
+            "references": [
+                {
+                    "title": "Blockchain for Financial Transactions",
+                    "authors": "Author G, Author H",
+                    "journal": "Journal of Blockchain Studies",
+                    "year": 2023,
+                    "doi": "10.5555/jbs.2023.12345"
+                }
+            ]
+        },
+        {
+            "id": "105",
+            "title": "The Role of Genomic Editing in Agriculture",
+            "abstract": "This article discusses the applications of genomic editing technologies, such as CRISPR, in improving crop yields and resistance to diseases, thereby contributing to food security.",
+            "keywords": [
+                "genomic editing",
+                "CRISPR",
+                "agriculture",
+                "food security"
+            ],
+            "authors": [
+                {
+                    "name": "Dr. Lisa Brown",
+                    "affiliation": "Department of Agricultural Biotechnology, BioTech University",
+                    "email": "lisa.brown@biotech.edu"
+                }
+            ],
+            "journal": {
+                "title": "Journal of Agricultural Biotechnology",
+                "volume": 22,
+                "issue": 4,
+                "year": 2024,
+                "doi": "10.1016/j.jab.2024.02.020",
+                "publisher": "Elsevier",
+                "issn": "3344-1122",
+                "price": 79.99
+            },
+            "figures": [
+                {
+                    "caption": "Figure 1: CRISPR editing process",
+                    "file": "figure1.png"
+                }
+            ],
+            "references": [
+                {
+                    "title": "Gene Editing in Agriculture: A Review",
+                    "authors": "Author I, Author J",
+                    "journal": "Biotechnology Advances",
+                    "year": 2023,
+                    "doi": "10.5555/ba.2023.67891"
+                }
+            ]
+        }
+    ]
+}

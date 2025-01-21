@@ -72,3 +72,14 @@ src/
 │   ├── environment.prod.ts
 
 4. Routing 
+5. Installation du theme css (Daisy UI)
+6. Navbar 
+- About us 
+- All journals 
+- All articles 
+- Search 
+- Login 
+
+7. Créer
+- Journals.json 
+- Articles.json
