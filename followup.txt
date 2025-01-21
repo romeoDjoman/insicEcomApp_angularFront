@@ -1,0 +1,74 @@
+1. Installation de Angular 18 
+2. Configuration de GitHub
+3. Définir la structure de mon projet
+
+src/
+├── app/
+│   ├── core/                  # Fonctionnalités principales et services globaux
+│   │   ├── services/          # Services partagés (auth, API, panier, etc.)
+│   │   │   ├── auth.service.ts
+│   │   │   ├── product.service.ts
+│   │   │   ├── cart.service.ts
+│   │   │   ├── payment.service.ts
+│   │   ├── guards/            # Gardes pour la navigation (authentification, etc.)
+│   │   │   ├── auth.guard.ts
+│   │   ├── interceptors/      # Intercepteurs HTTP (JWT, gestion des erreurs, etc.)
+│   │   │   ├── auth.interceptor.ts
+│   │   │   ├── error.interceptor.ts
+│   │   ├── models/            # Interfaces et modèles TypeScript
+│   │   │   ├── product.model.ts
+│   │   │   ├── user.model.ts
+│   │   │   ├── order.model.ts
+│   ├── shared/                # Composants, directives, pipes réutilisables
+│   │   ├── components/        # Composants génériques (ex : header, footer)
+│   │   │   ├── header/
+│   │   │   │   ├── header.component.ts
+│   │   │   │   ├── header.component.html
+│   │   │   ├── footer/
+│   │   │   │   ├── footer.component.ts
+│   │   ├── directives/        # Directives Angular personnalisées
+│   │   ├── pipes/             # Pipes personnalisés (ex : formatage des prix)
+│   │   │   ├── currency.pipe.ts
+│   ├── features/              # Modules fonctionnels (organisés par fonctionnalité)
+│   │   ├── home/              # Page d'accueil
+│   │   │   ├── home.module.ts
+│   │   │   ├── home.component.ts
+│   │   │   ├── home.component.html
+│   │   ├── products/          # Gestion des produits
+│   │   │   ├── product-list/
+│   │   │   │   ├── product-list.component.ts
+│   │   │   │   ├── product-list.component.html
+│   │   │   ├── product-detail/
+│   │   │   │   ├── product-detail.component.ts
+│   │   │   │   ├── product-detail.component.html
+│   │   ├── cart/              # Panier
+│   │   │   ├── cart.component.ts
+│   │   │   ├── cart.component.html
+│   │   ├── checkout/          # Paiement
+│   │   │   ├── checkout.component.ts
+│   │   │   ├── checkout.component.html
+│   │   ├── auth/              # Authentification
+│   │   │   ├── login/
+│   │   │   │   ├── login.component.ts
+│   │   │   │   ├── login.component.html
+│   │   │   ├── register/
+│   │   │   │   ├── register.component.ts
+│   │   │   │   ├── register.component.html
+│   │   ├── orders/            # Gestion des commandes
+│   │   │   ├── order-list/
+│   │   │   │   ├── order-list.component.ts
+│   │   │   │   ├── order-list.component.html
+│   │   │   ├── order-detail/
+│   │   │   │   ├── order-detail.component.ts
+│   │   │   │   ├── order-detail.component.html
+│   ├── app-routing.module.ts  # Configuration des routes
+│   ├── app.module.ts          # Module principal
+├── assets/                    # Fichiers statiques (images, icônes, etc.)
+│   ├── images/
+│   ├── styles/
+│       ├── global-styles.scss # Styles globaux de l'application
+├── environments/              # Environnements (dev, prod)
+│   ├── environment.ts
+│   ├── environment.prod.ts
+
+4. Routing 
