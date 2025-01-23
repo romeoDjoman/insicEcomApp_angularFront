@@ -83,3 +83,21 @@ src/
 7. Créer
 - Journals.json 
 - Articles.json
+
+8.Display Journals 
+Authorized assets sources in angular.json
+"assets": [
+              {
+                "glob": "**/*",
+                "input": "public",
+                "output": "/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
+              }
+            ]
+
+9.Display Articles
+ 

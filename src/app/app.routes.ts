@@ -1,49 +1,59 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
+import { ArticleDetailComponent } from './features/articles/article-detail/article-detail.component';
 
 export const routes: Routes = [
-    { 
-        path: '',
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    {
+        path: 'home',
         component: HomeComponent
     },
-    { 
-        path: 'journals', 
-        loadComponent: () => 
+    // { path: '**', component: PageNotFoundComponent },
+    {
+        path: 'journals',
+        loadComponent: () =>
             import('./features/journals/journal-list/journal-list.component')
-            .then(m => m.JournalListComponent) 
+                .then(m => m.JournalListComponent)
     },
-    { 
-        path: 'journal/:id', 
-        loadComponent: () => 
+    {
+        path: 'journal/:id',
+        loadComponent: () =>
             import('./features/journals/journal-detail/journal-detail.component')
-            .then(m => m.JournalDetailComponent) 
+                .then(m => m.JournalDetailComponent)
     },
-    { 
-        path: 'cart', 
-        loadComponent: () => 
+    {
+        path: 'articles',
+        loadComponent: () =>
+            import('./features/articles/article-list/article-list.component')
+                .then(m => m.ArticleListComponent)
+    },
+    {
+        path: 'articles/:articleId',
+        component: ArticleDetailComponent
+    },
+    {
+        path: 'cart',
+        loadComponent: () =>
             import('./features/cart/cart.component')
-            .then(m => m.CartComponent) 
+                .then(m => m.CartComponent)
     },
-    { 
-        path: 'checkout', 
-        loadComponent: () => 
+    {
+        path: 'checkout',
+        loadComponent: () =>
             import('./features/checkout/checkout.component')
-            .then(m => m.CheckoutComponent) 
+                .then(m => m.CheckoutComponent)
     },
-    { 
-        path: 'auth/login', 
-        loadComponent: () => 
+    {
+        path: 'auth/login',
+        loadComponent: () =>
             import('./features/auth/login/login.component')
-            .then(m => m.LoginComponent) 
+                .then(m => m.LoginComponent)
     },
-    { 
-        path: 'auth/register', 
-        loadComponent: () => 
+    {
+        path: 'auth/register',
+        loadComponent: () =>
             import('./features/auth/register/register.component')
-            .then(m => m.RegisterComponent) 
-    },
-    { 
-        path: '**', 
-        redirectTo: '' 
+                .then(m => m.RegisterComponent)
     }
+    
 ];

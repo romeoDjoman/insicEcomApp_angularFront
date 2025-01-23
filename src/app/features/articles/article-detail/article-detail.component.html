@@ -1,0 +1,9 @@
+@if(articleData) {
+        <div>
+            <h3><strong>Title :</strong> {{ articleData.title }}</h3>
+            <p><strong>Abstract :</strong><br>{{ articleData.abstract}}</p>
+        </div>
+} @else {
+    <p>No article found</p>
+}
+  

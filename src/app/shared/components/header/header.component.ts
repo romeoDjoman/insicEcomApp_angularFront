@@ -1,20 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { JournalListComponent } from '../../../features/journals/journal-list/journal-list.component';
+import { RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [
-    RouterOutlet, 
-    RouterLink,
-    JournalListComponent
+  imports: [ 
+    RouterLink
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
 
-  
 
 }

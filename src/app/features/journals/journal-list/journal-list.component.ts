@@ -1,8 +1,6 @@
 import { Component, OnInit  } from '@angular/core';
 import { JournalService } from '../../../core/services/journal.service';
-import { provideHttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { JournalsData } from '../../../core/models/journal-data-model';
 
 
 @Component({
@@ -21,7 +19,7 @@ export class JournalListComponent implements OnInit {
 
   ngOnInit() {
     this.journalService.getJournalsData().subscribe(data => {
-      this.journals = data.journals;
+      console.log(this.journals = data.journals);
     });
   }
 
