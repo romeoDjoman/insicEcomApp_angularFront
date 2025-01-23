@@ -16,7 +16,7 @@ export const routes: Routes = [
                 .then(m => m.JournalListComponent)
     },
     {
-        path: 'journal/:id',
+        path: 'journals/:journalId',
         loadComponent: () =>
             import('./features/journals/journal-detail/journal-detail.component')
                 .then(m => m.JournalDetailComponent)

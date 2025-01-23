@@ -49,7 +49,8 @@ export interface Journal {
   publisher: string;
   issn: string;
   price: number;
-  article: Article;
+  article: Article[];
+  authors: Author[];
 }
 
 export interface JournalsData {

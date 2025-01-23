@@ -1,1 +1,7 @@
-<p>journal-detail works!</p>
+@if(journalData){
+    <div>
+        <h3><strong>Title :</strong> {{ journalData.title }}</h3>
+        <p><strong>Publisher : </strong>{{ journalData.publisher }}</p>
+        <p><strong>Date :</strong> {{ journalData.year }}</p>
+    </div>
+}

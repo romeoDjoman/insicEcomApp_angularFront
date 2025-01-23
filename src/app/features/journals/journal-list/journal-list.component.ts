@@ -1,12 +1,13 @@
 import { Component, OnInit  } from '@angular/core';
 import { JournalService } from '../../../core/services/journal.service';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'app-journal-list',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   providers: [],
   templateUrl: './journal-list.component.html',
   styleUrl: './journal-list.component.css'
