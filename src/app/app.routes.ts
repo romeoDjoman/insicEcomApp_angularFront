@@ -29,7 +29,9 @@ export const routes: Routes = [
     },
     {
         path: 'articles/:articleId',
-        component: ArticleDetailComponent
+        loadComponent: () =>
+            import('./features/articles/article-detail/article-detail.component')
+                .then(m => m.ArticleDetailComponent)
     },
     {
         path: 'cart',
