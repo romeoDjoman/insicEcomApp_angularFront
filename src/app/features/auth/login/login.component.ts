@@ -39,6 +39,7 @@ export class LoginComponent {
       .subscribe(
         user => {
           this.router.navigate(['/home']);
+          this.loading = true;
           console.log('Connexion réussie !');
         },
         error => {

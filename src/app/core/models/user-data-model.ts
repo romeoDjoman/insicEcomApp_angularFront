@@ -3,7 +3,7 @@ export interface Role {
   permissions: string[];              
 }
 export interface User {
-  id: string; 
+  id?: string; 
   position: string; 
   firstName: string;
   lastName: string;

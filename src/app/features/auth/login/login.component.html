@@ -1,22 +1,39 @@
-<div>
-    <h2><strong>Connexion</strong></h2>
-    <p>Connectez-vous pour accéder à votre compte</p>
+<div class="container mx-auto p-4 max-w-md">
+    <h2 class="text-2xl font-semibold text-center mb-4"><strong>Connexion</strong></h2>
+    <p class="text-center mb-6">Connectez-vous pour accéder à votre compte</p>
+    
     <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" formControlName="email" class="form-control" autocomplete="username"/>
-            @if (this.loginForm.controls['email'].invalid) {
-                <span>{{ getErrorMessage('email') }}</span>
-            }
-        </div>
-
-        <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" formControlName="password" class="form-control" autocomplete="current-password" />
-            @if (this.loginForm.controls['password'].invalid) {
-                <span>{{ getErrorMessage('password') }}</span>
-            }
-        </div>
-        <button type="submit" [disabled]="loading">Login</button>
+      
+      <!-- Email -->
+      <div class="form-control mb-4">
+        <label for="email" class="label">
+          <span class="label-text">Email</span>
+        </label>
+        <input type="email" id="email" formControlName="email" class="input input-bordered w-full" autocomplete="username"/>
+        @if (this.loginForm.controls['email'].invalid && this.loginForm.controls['email'].touched) {
+          <div class="text-error text-sm mt-1">
+            <span>{{ getErrorMessage('email') }}</span>
+          </div>
+        }
+      </div>
+  
+      <!-- Password -->
+      <div class="form-control mb-4">
+        <label for="password" class="label">
+          <span class="label-text">Mot de passe</span>
+        </label>
+        <input type="password" id="password" formControlName="password" class="input input-bordered w-full" autocomplete="current-password" />
+        @if (this.loginForm.controls['password'].invalid && this.loginForm.controls['password'].touched) {
+          <div class="text-error text-sm mt-1">
+            <span>{{ getErrorMessage('password') }}</span>
+          </div>
+        }
+      </div>
+  
+      <!-- Submit button -->
+      <button type="submit" [disabled]="loading" class="btn btn-primary w-full" [ngClass]="{'loading': loading}">
+        {{ loading ? 'Connexion...' : 'Se connecter' }}
+      </button>
     </form>
-</div>
+  </div>
+  

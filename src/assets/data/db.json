@@ -9,7 +9,10 @@
       "position": "Std.",
       "role": {
         "name": "Client",
-        "permissions": ["read", "buy"]
+        "permissions": [
+          "read",
+          "buy"
+        ]
       }
     },
     {
@@ -21,7 +24,10 @@
       "position": "PhD.",
       "role": {
         "name": "Client",
-        "permissions": ["read", "buy"]
+        "permissions": [
+          "read",
+          "buy"
+        ]
       }
     },
     {
@@ -33,7 +39,10 @@
       "position": "Dr.",
       "role": {
         "name": "Client",
-        "permissions": ["read", "buy"]
+        "permissions": [
+          "read",
+          "buy"
+        ]
       }
     },
     {
@@ -45,7 +54,10 @@
       "position": "PostD.",
       "role": {
         "name": "Client",
-        "permissions": ["read", "buy"]
+        "permissions": [
+          "read",
+          "buy"
+        ]
       }
     },
     {
@@ -57,7 +69,10 @@
       "position": "Pr.",
       "role": {
         "name": "Client",
-        "permissions": ["read", "buy"]
+        "permissions": [
+          "read",
+          "buy"
+        ]
       }
     },
     {
@@ -69,11 +84,18 @@
       "position": "Pr.",
       "role": {
         "name": "Author",
-        "permissions": ["read", "write", "edit"]
+        "permissions": [
+          "read",
+          "write",
+          "edit"
+        ]
       },
       "affiliation": "University of Science",
       "bio": "Alice is a researcher in computer science with a focus on AI and machine learning.",
-      "articles": ["101", "102"]
+      "articles": [
+        "101",
+        "102"
+      ]
     },
     {
       "id": "7",
@@ -84,11 +106,18 @@
       "position": "PhD.",
       "role": {
         "name": "Author",
-        "permissions": ["read", "write", "edit"]
+        "permissions": [
+          "read",
+          "write",
+          "edit"
+        ]
       },
       "affiliation": "Tech Institute",
       "bio": "Bob specializes in software development and has published multiple articles on web technologies.",
-      "articles": ["103", "104"]
+      "articles": [
+        "103",
+        "104"
+      ]
     },
     {
       "id": "8",
@@ -99,11 +128,18 @@
       "position": "PostD.",
       "role": {
         "name": "Author",
-        "permissions": ["read", "write", "edit"]
+        "permissions": [
+          "read",
+          "write",
+          "edit"
+        ]
       },
       "affiliation": "National Research Lab",
       "bio": "Charlie works in the field of robotics and automation, focusing on industrial applications.",
-      "articles": ["105", "106"]
+      "articles": [
+        "105",
+        "106"
+      ]
     },
     {
       "id": "9",
@@ -114,11 +150,17 @@
       "position": "Pr.",
       "role": {
         "name": "Author",
-        "permissions": ["read", "write", "edit"]
+        "permissions": [
+          "read",
+          "write",
+          "edit"
+        ]
       },
       "affiliation": "Wonder University",
       "bio": "Diana researches environmental science and has a passion for sustainable development.",
-      "articles": ["107"]
+      "articles": [
+        "107"
+      ]
     },
     {
       "id": "10",
@@ -129,11 +171,18 @@
       "position": "Dr.",
       "role": {
         "name": "Author",
-        "permissions": ["read", "write", "edit"]
+        "permissions": [
+          "read",
+          "write",
+          "edit"
+        ]
       },
       "affiliation": "Global Science Organization",
       "bio": "Eve is a chemist and writes extensively on organic chemistry innovations.",
-      "articles": ["108", "109"]
+      "articles": [
+        "108",
+        "109"
+      ]
     },
     {
       "id": "11",
@@ -144,8 +193,38 @@
       "position": "Pr.",
       "role": {
         "name": "Admin",
-        "permissions": ["read", "write", "edit", "delete", "manage"]
+        "permissions": [
+          "read",
+          "write",
+          "edit",
+          "delete",
+          "manage"
+        ]
       }
+    },
+    {
+      "id": "91a9",
+      "firstName": "User",
+      "lastName": "DJO",
+      "email": "user@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "position": "Dr.",
+      "role": "Client"
+    },
+    {
+      "id": "a9d3",
+      "firstName": "userPrenom",
+      "lastName": "UserNom",
+      "email": "user@gmail.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "position": "Std.",
+      "role": "Client",
+      "permissions": [
+        "read",
+        "buy"
+      ]
     }
   ]
 }
