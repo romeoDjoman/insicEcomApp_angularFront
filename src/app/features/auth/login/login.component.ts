@@ -1,47 +1,64 @@
-import { Component, inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { ReactiveFormsModule, FormGroup, FormBuilder, Validators, FormsModule } from '@angular/forms';
 import { AuthService } from '../../../core/services/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [],
+  imports: [ReactiveFormsModule, CommonModule, FormsModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  loginForm: FormGroup;
-  submitted = false;
+  loginForm!: FormGroup;
   loading = false;
-  errorMessage: string | null = null;
+  errorMessage: string = ''; // Message d'erreur en cas d'échec de connexion
 
   constructor(
-    private formbuilder: FormBuilder,
+    private formBuilder: FormBuilder,
     private authService: AuthService,
     private router: Router
-  ) { 
-    this.loginForm = this.formbuilder.group({
+  ) { }
+
+  ngOnInit(): void {
+    this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]]
     });
   }
 
-  onSumit() {
-    this.submitted = true;
+  onLogin(): void {
     if (this.loginForm.invalid) {
       return;
     }
+
     this.loading = true;
-    this.authService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe({
-      next: (data) => {
-        this.router.navigate(['/']);
-      },
-      error: (err) => {
-        this.errorMessage = err.message;
-        this.loading = false;
-      }
-    });
+    this.authService.login(this.loginForm.controls['email'].value, this.loginForm.controls['email'].value)
+      .subscribe(
+        user => {
+          this.router.navigate(['/home']);
+          console.log('Connexion réussie !');
+        },
+        error => {
+          this.errorMessage = 'Identifiants incorrects. Veuillez réessayer.';
+          this.loading = false;
+        }
+      );
   }
-  
+
+  getErrorMessage(field: string): string {
+    const control = this.loginForm.controls[field];
+
+    if (control.errors?.['required']) {
+      return `${field} est requis.`;
+    } else if (control.errors?.['email']) {
+      return `Veuillez entrer un email valide.`;
+    } else if (control.errors?.['minlength']) {
+      return `Le mot de passe doit comporter au moins 6 caractères.`;
+    }
+
+    return '';
+  }
 }

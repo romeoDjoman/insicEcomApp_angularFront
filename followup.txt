@@ -102,6 +102,11 @@ Authorized assets sources in angular.json
 9.Display Articles
 10. Display Articles details 
 11. Display Journals details 
+12. Sing i
+
+
+
+
 // Supprimer article et Journal 
 // Ajouter Articles et Journal 
 

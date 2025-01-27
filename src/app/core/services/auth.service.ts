@@ -1,22 +1,27 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { User } from '../models/user-management-model';
+import { HttpClient } from '@angular/common/http';
+import { Observable, map, throwError } from 'rxjs';
+import { User } from '../models/user-data-model';
+import { catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'assets/data/user-data.json';
-  // private baseUrl = `${environment.apiUrl}/auth`;
+  private apiUrl = 'http://localhost:3000/users';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  login(email: string, password: string): Observable<User> {
-    return this.http.post<User>(`${this.apiUrl}/auth/login`, { email, password });
+  
+  login(email: string, password: string): Observable<User | null> { 
+    return this.http.get<User[]>(`${this.apiUrl}?email=${email}&password=${password}`).pipe(
+      map(users => users.length > 0 ? users[0] : null) 
+    );
   }
+  
 
-  register(data: { email: string, password: string }): Observable<User> {
-    return this.http.post<User>(`${this.apiUrl}/auth/register`, data);
+  // Méthode pour enregistrer un nouvel utilisateur
+  register(user: User): Observable<User> {
+    return this.http.post<User>(this.apiUrl, user);
   }
 }

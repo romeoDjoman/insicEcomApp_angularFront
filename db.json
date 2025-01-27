@@ -1,0 +1,151 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "password": "hashedpassword123",
+      "position": "Std.",
+      "role": {
+        "name": "Client",
+        "permissions": ["read", "buy"]
+      }
+    },
+    {
+      "id": "2",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "jane.doe@example.com",
+      "password": "hashedpassword456",
+      "position": "PhD.",
+      "role": {
+        "name": "Client",
+        "permissions": ["read", "buy"]
+      }
+    },
+    {
+      "id": "3",
+      "firstName": "Mark",
+      "lastName": "Spencer",
+      "email": "mark.spencer@example.com",
+      "password": "hashedpassword789",
+      "position": "Dr.",
+      "role": {
+        "name": "Client",
+        "permissions": ["read", "buy"]
+      }
+    },
+    {
+      "id": "4",
+      "firstName": "Lisa",
+      "lastName": "Brown",
+      "email": "lisa.brown@example.com",
+      "password": "hashedpassword321",
+      "position": "PostD.",
+      "role": {
+        "name": "Client",
+        "permissions": ["read", "buy"]
+      }
+    },
+    {
+      "id": "5",
+      "firstName": "Paul",
+      "lastName": "Adams",
+      "email": "paul.adams@example.com",
+      "password": "hashedpassword654",
+      "position": "Pr.",
+      "role": {
+        "name": "Client",
+        "permissions": ["read", "buy"]
+      }
+    },
+    {
+      "id": "6",
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "email": "alice.smith@example.com",
+      "password": "hashedpassword123",
+      "position": "Pr.",
+      "role": {
+        "name": "Author",
+        "permissions": ["read", "write", "edit"]
+      },
+      "affiliation": "University of Science",
+      "bio": "Alice is a researcher in computer science with a focus on AI and machine learning.",
+      "articles": ["101", "102"]
+    },
+    {
+      "id": "7",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "email": "bob.johnson@example.com",
+      "password": "hashedpassword456",
+      "position": "PhD.",
+      "role": {
+        "name": "Author",
+        "permissions": ["read", "write", "edit"]
+      },
+      "affiliation": "Tech Institute",
+      "bio": "Bob specializes in software development and has published multiple articles on web technologies.",
+      "articles": ["103", "104"]
+    },
+    {
+      "id": "8",
+      "firstName": "Charlie",
+      "lastName": "Brown",
+      "email": "charlie.brown@example.com",
+      "password": "hashedpassword789",
+      "position": "PostD.",
+      "role": {
+        "name": "Author",
+        "permissions": ["read", "write", "edit"]
+      },
+      "affiliation": "National Research Lab",
+      "bio": "Charlie works in the field of robotics and automation, focusing on industrial applications.",
+      "articles": ["105", "106"]
+    },
+    {
+      "id": "9",
+      "firstName": "Diana",
+      "lastName": "Prince",
+      "email": "diana.prince@example.com",
+      "password": "hashedpassword321",
+      "position": "Pr.",
+      "role": {
+        "name": "Author",
+        "permissions": ["read", "write", "edit"]
+      },
+      "affiliation": "Wonder University",
+      "bio": "Diana researches environmental science and has a passion for sustainable development.",
+      "articles": ["107"]
+    },
+    {
+      "id": "10",
+      "firstName": "Eve",
+      "lastName": "Adams",
+      "email": "eve.adams@example.com",
+      "password": "hashedpassword654",
+      "position": "Dr.",
+      "role": {
+        "name": "Author",
+        "permissions": ["read", "write", "edit"]
+      },
+      "affiliation": "Global Science Organization",
+      "bio": "Eve is a chemist and writes extensively on organic chemistry innovations.",
+      "articles": ["108", "109"]
+    },
+    {
+      "id": "11",
+      "firstName": "Admin",
+      "lastName": "User",
+      "email": "admin@example.com",
+      "password": "hashedpasswordadmin",
+      "position": "Pr.",
+      "role": {
+        "name": "Admin",
+        "permissions": ["read", "write", "edit", "delete", "manage"]
+      }
+    }
+  ]
+}

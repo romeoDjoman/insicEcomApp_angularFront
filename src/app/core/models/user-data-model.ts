@@ -2,13 +2,16 @@ export interface Role {
   name: 'Client' | 'Author' | 'Admin'; 
   permissions: string[];              
 }
-
 export interface User {
-  id: string;           
-  name: string;                 
-  password: string;     
-  role: Role;          
+  id: string; 
+  position: string; 
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+  role: Role;
 }
+
 
 export interface Client extends User {
   role: { name: 'Client'; permissions: ['read', 'buy'] }; 
