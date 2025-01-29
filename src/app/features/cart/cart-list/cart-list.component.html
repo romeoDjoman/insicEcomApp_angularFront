@@ -1,0 +1,50 @@
+<div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6 text-center">🛒 Votre Panier</h1>
+  
+    <div *ngIf="cartItems.length > 0; else emptyCart" class="bg-white shadow-md rounded-lg p-6">
+      <table class="table w-full">
+        <thead>
+          <tr class="text-left bg-gray-200">
+            <th class="p-3">Produit</th>
+            <th class="p-3">Prix</th>
+            <th class="p-3">Quantité</th>
+            <th class="p-3">Total</th>
+            <th class="p-3">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of cartItems" class="border-b">
+            <td class="p-3 flex items-center">
+              <img src="https://via.placeholder.com/50" alt="Product" class="w-12 h-12 rounded-lg mr-3">
+              <span>{{ item.name }}</span>
+            </td>
+            <td class="p-3">{{ item.price }}€</td>
+            <!-- <td class="p-3">
+              <input type="number" class="input input-bordered w-16 text-center" [(ngModel)]="item.quantity" (change)="updateCart(item)">
+            </td> -->
+            <td class="p-3">{{ item.price * item.quantity }}€</td>
+            <td class="p-3">
+              <button class="btn btn-error btn-sm" (click)="removeFromCart(item.id)">✖</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <div class="mt-6 flex justify-between items-center">
+        <p class="text-xl font-semibold">Total: {{ total }}€</p>
+        <div>
+          <button class="btn btn-outline btn-error" (click)="clearCart()">🗑️ Vider le Panier</button>
+          <button class="btn btn-primary ml-3" routerLink="/checkout">✅ Passer à la Caisse</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Affichage si le panier est vide -->
+    <ng-template #emptyCart>
+      <div class="text-center p-10 bg-gray-100 rounded-lg">
+        <h2 class="text-xl font-semibold mb-4">Votre panier est vide 😢</h2>
+        <a routerLink="/" class="btn btn-primary">Retourner au magasin</a>
+      </div>
+    </ng-template>
+  </div>
+  

@@ -226,5 +226,8 @@
         "buy"
       ]
     }
-  ]
+  ],
+  "cart": [],
+  "orders": [],
+  "checkout": []
 }

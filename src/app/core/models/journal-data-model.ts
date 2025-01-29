@@ -10,6 +10,7 @@ export interface Reference {
   journal: string;
   year: number;
   doi: string;
+  publicationDate: Date;
 }
 
 export interface Figure {
@@ -46,9 +47,11 @@ export interface Journal {
   issue: number;
   year: number;
   doi: string;
+  description: string;
   publisher: string;
   issn: string;
   price: number;
+  coverImage: string;
   article: Article[];
   authors: Author[];
 }

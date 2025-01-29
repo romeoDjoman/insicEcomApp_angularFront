@@ -1,9 +1,14 @@
-@if(articleData) {
-        <div>
-            <h3><strong>Title :</strong> {{ articleData.title }}</h3>
-            <p><strong>Abstract :</strong><br>{{ articleData.abstract}}</p>
-        </div>
-} @else {
+<div *ngIf="articleData; else noArticle">
+    <div>
+      <h3><strong>Title :</strong> {{ articleData.title }}</h3>
+      <p><strong>Abstract :</strong><br>{{ articleData.abstract }}</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary" (click)="onAddToCart(articleData)">🛒 Ajouter au panier</button>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #noArticle>
     <p>No article found</p>
-}
+  </ng-template>
   

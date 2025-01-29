@@ -102,12 +102,13 @@ Authorized assets sources in angular.json
 9.Display Articles
 10. Display Articles details 
 11. Display Journals details 
-12. Sing i
+12. User management (Login and Register)
 
 
+13. Afficher les pages selon qu'on est admin ou pas (A faire)
+14. Fonctionalité panier (à faire)
 
 
 // Supprimer article et Journal 
 // Ajouter Articles et Journal 
 
-12. Ajouter au Panier
